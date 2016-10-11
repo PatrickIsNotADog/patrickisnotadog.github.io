@@ -8,21 +8,16 @@ url: "http://alkarn.github.io"
 baseurl: ""
 
 # Name of website
-title: Alex Karnezis' Blog
+title: Alex Karnezis
 
 # Short description of your site
-description: A software engineer's blog waiting for an awesome and inspired title.
+description: Software engineer inspired to share his knowledge of whatever he occupies himself with, his projects and also his journeys :)
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -68,9 +63,6 @@ share-links-active:
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
 
-# Facebook App ID
-# fb_app_id: ""
-
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
@@ -96,7 +88,7 @@ defaults:
     values:
       layout: "post"
       comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
+      social-share: false # add social media sharing buttons to all blog posts
   -
     scope:
       path: "" # all files
