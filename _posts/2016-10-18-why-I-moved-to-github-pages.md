@@ -10,4 +10,4 @@ Maybe you think this is way too much for how someone writes his blog, but you sh
 
 > The way you do one thing, is the way you do all things.
 
-This is the first post I write am going to publish, since my blog migrated to GitHub Pages this week, and it still feels like magic!
+This is the first post I am going to publish, since my blog migrated to GitHub Pages this week, and it still feels like magic!
