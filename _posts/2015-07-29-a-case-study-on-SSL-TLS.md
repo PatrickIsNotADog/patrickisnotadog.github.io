@@ -1,5 +1,3 @@
-# A case study on SSL/TLS
-
 I decided to write this post after a project I participated in, which required a web service to connect to a remote machine over SSL. Although I had already encountered the term “SSL” a lot of times, I soon realized that I had never fully understood how it really works and how it could be implemented in Java, so I started collecting information from the internet to make things clear. I will share these notes here, starting from the mathematical background of SSL to end up with the Java Secure Socket Extension.
 
 ## Theoretical background: Public-key (assymetric) cryptography

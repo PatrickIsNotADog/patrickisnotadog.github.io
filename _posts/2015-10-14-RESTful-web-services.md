@@ -1,5 +1,3 @@
-# RESTful Web Services
-
 In this post, I will describe RESTful web services, starting from the enterprise need for sharing data and the way World Wide Web was developed in this direction. Then, I will talk about web services and how they emerged stepping on the web and the Internet, the general constraints of the REST architecture and how you can implement a RESTful web service. Finally, I will include some best practices.
 
 ## Computers change how we share resources

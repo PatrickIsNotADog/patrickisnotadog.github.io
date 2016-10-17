@@ -1,5 +1,3 @@
-# Dependency Injection with Spring
-
 In this post I will talk about the importance of connecting software components inside an application, how Dependency Injection emerged as a best practice and how you can wire components using the Spring framework.
 
 ## Java Framework for Enterprise Applications

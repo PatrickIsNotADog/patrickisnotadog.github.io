@@ -1,5 +1,3 @@
-# SaltStack infrastructure on Ubuntu 16.04 linux containers
-
 At [a previous post](../saltstack-minimal-installation/README) I described how you can create a minimal SaltStack installation with a master and two minion nodes, running on KVM VMs. Now, I will describe the same procedure using linux containers; the steps to achieve a proper working installation are few and simple.
 
 First, install lxd package, if it is not already installed:

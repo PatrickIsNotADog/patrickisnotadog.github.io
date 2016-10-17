@@ -1,5 +1,3 @@
-# 10 Things to do after installing Eclipse
-
 Well, I will not list exactly 10 things someone could do after installing Eclipse, but I always liked these cool titles, like *10 Things to do after installing Ubuntu* or *10 ways to boost your laptop* and decided to name my post similarly. Maybe by time it will actually be 10 things, or even keep adding and reach the even cooler *20 Things to do after installing Eclipse*!
 
 So, let’s start working! You have already downloaded a version of Eclipse IDE, unzipped it in some directory, launched it and selected a proper workspace. Here are some things I usually do after I download a new version of Eclipse, in order to configure it the way I like.
