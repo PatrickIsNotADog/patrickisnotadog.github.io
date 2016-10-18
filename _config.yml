@@ -61,7 +61,7 @@ share-links-active:
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-85888747-1"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
