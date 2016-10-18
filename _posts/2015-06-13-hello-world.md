@@ -1,5 +1,3 @@
-# Welcome to Travelling With Code
-
 Hello everybody!
 
 My name is Alex and I am a young software engineer. I currently live in Athens, but I have been raised in a smaller city of north Greece. I came to Athens as an 18 year-old to start my studies at the city’s technical university, as an electrical and computer engineer, and it went pretty fine, with lots of fun, but hard studying during exams too!

@@ -1,5 +1,3 @@
-# How to create a minimal installation of SaltStack on Ubuntu VMs
-
 In this post I will describe how you can create a SaltStack infrastructure with one master and two minion nodes, using VMs created with [libvirt](https://libvirt.org), [QEMU](http://wiki.qemu.org) and [KVM](http://www.linux-kvm.org).
 
 ## Virtualization Tools
