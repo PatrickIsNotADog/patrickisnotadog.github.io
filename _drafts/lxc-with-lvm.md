@@ -75,5 +75,10 @@ Create an extra disk and attach it to the VM:
 1. pvcreate /dev/vg00/lxd
 1. vgcreate lxd /dev/vg00/lxd
 
+## Resize an existing Logical Volume
+
+    lvextend -L${new size} --resizefs ${logical volume}
+
+The option `--resizefs` is needed if you have a container using the LV as its root filesystem, so that the underlying fs gets updated too.
 
          
