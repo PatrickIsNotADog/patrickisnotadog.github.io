@@ -40,7 +40,7 @@ to
 
 ## Dependency Injection
 
-This is a little more elegant than the first approach, but still demands source changes in order to change Contacts implementation or provide a mock object. In order to solve this problem, I will use the [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection)) design pattern, which assigns the task of creating a specific object’s field to another object, an assembler, that will populate the *field* object and link it to its *owner*. In the phone book example, `PhoneBook` will no longer need to care about how the `ContactsInterface` will be implemented or instantiated, but just provide the means for another object to initiate a `ContactsInterface` implementation, and pass it to `PhoneBook`.
+This is a little more elegant than the first approach, but still demands source changes in order to change Contacts implementation or provide a mock object. In order to solve this problem, I will use the [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) design pattern, which assigns the task of creating a specific object’s field to another object, an assembler, that will populate the *field* object and link it to its *owner*. In the phone book example, `PhoneBook` will no longer need to care about how the `ContactsInterface` will be implemented or instantiated, but just provide the means for another object to initiate a `ContactsInterface` implementation, and pass it to `PhoneBook`.
 
 We could say that there are three types of dependency injection. The first one is *Constructor Injection* and uses the constructor of the *owner* object, to set the *field* object. Under this approach `PhoneBook` would be transformed to:
 
@@ -115,7 +115,8 @@ public class SpringAplication {
     public void main(String[] args) {
         PhoneBook phoneBook = new PhoneBook();
         ContactsInterface contacts = new ContactsFileImpl("/home/travelling/phonebook-example/contacts");
-        phoneBook.setContacts(contacts); phonebook.findAllContacts().stream().forEach(contact -> System.out.println(contact));
+        phoneBook.setContacts(contacts);
+        phonebook.findAllContacts().stream().forEach(contact -> System.out.println(contact));
     }
 }
 ```
@@ -126,7 +127,7 @@ There is also third approach, called *Interface Injection*, but I will not refer
 
 ## What about Spring?
 
-Spring controls the wiring, the configuring and the life cycle of the components using the Spring container, which contains beans, that represent the application’s components and the associations between them. There are two kinds of containers available to the developer:
+Spring controls the wiring, the configuration and the life cycle of the components using the Spring container, which contains beans, that represent the application’s components and the associations between them. There are two kinds of containers available to the developer:
 
 * Bean factories, which are the simplest containers and provide basic support for dependency injection.
 * Application contexts, which are extended bean factories, that also provide application framework services, such as: 
@@ -159,7 +160,7 @@ public class PhoneBook {
 Then we can create an `Application` class, which creates and configures the XmlBeanFactory in its main method:
 
 ```java
-public class SpringApplication {
+,public class SpringApplication {
 
     public static void main(String[] args) {
         BeanFactory injector = new XmlBeanFactory(new ClassPathResource("spring.xml"));
@@ -230,7 +231,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 Great places to read more about Spring and Dependency Injection:
 
-* Book: Manning, Spring in Action.
-* Martin Fowler’s post: http://www.martinfowler.com/articles/injection.html
+* [Manning's book, Spring in Action](https://www.manning.com/books/spring-in-action)
+* [Martin Fowler’s post on injection](http://www.martinfowler.com/articles/injection.html)
 
-and also make sure you check Spring Boot!
+and also make sure you check [Spring Boot](https://github.com/spring-projects/spring-boot)!
