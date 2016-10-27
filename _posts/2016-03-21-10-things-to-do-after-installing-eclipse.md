@@ -71,6 +71,6 @@ So, let’s start working! You have already downloaded a version of Eclipse IDE,
 1. Open pom.xml files as XML by default:
 
     **Window → Preferences → Maven → User Interface → Open XML page in the POM editor by default → Apply → OK**
-1. Go to **Help -> Eclipse Marketplace** and then find and install *Eclipse Color Theme*. It is a plugin that provides a variety of color themes for your editor panel, that can help you customize your IDE. Then go to **Window -> Preferences -> General -> Appearence -> Color Theme** and check the themes yourself. Make sure you give *Obsidian* a try!
+1. Go to **Help → Eclipse Marketplace** and then find and install *Eclipse Color Theme*. It is a plugin that provides a variety of color themes for your editor panel, that can help you customize your IDE. Then go to **Window → Preferences → General → Appearence → Color Theme** and check the themes yourself. Make sure you give *Obsidian* a try!
 
 Wow! It’s actually more than 10! Hope I reach 20 then!
