@@ -75,6 +75,16 @@ So, let’s start working! You have already downloaded Eclipse Mars on Ubuntu 16
 1. Go to **Help → Eclipse Marketplace** and then find and install *Eclipse Color Theme*. It is a plugin that provides a variety of color themes for your editor panel, that can help you customize your IDE. Then go to **Window → Preferences → General → Appearence → Color Theme** and check the themes yourself. Make sure you give *Obsidian* a try!
 1. There is a possibility, that when you open the *Javadoc* view, you see an ugly black background with high contrast white text font. [This is a common problem](http://askubuntu.com/questions/70599/how-to-change-tooltip-background-color-in-unity), that needs changes both on Eclipse and on Ubuntu configuration files. In order to change the *Javadoc* view's background you can go to **Window → Preferences → General → Appearence → Colors and Fonts → Java → Javadoc view background** and edit it. The default is `#f5f5b5`.
 
-    This will change view's background, but you can not configure the Javadoc text color from inside Eclipse. In order to do so, you have to edit Ubuntu current appearence theme's configuration file - for me it is Ambience - and specifically the gtk version Eclipse uses - for me gtk2. The parameter you have to change is `tooltip_fg_color`. You can also change `tooltip_bg_color` to change the *hover* Javadoc message, that appears when you put your mouse over a Java class, in Eclipse's *Java Editor* view.
+    This will change view's background, but you can not configure the Javadoc text color from inside Eclipse. In order to do so, you have to edit Ubuntu current appearence theme's configuration file - for me it is Ambience - and specifically the gtk version Eclipse uses - for me gtk2. The parameter you have to change is `tooltip_fg_color`. You can also change `tooltip_bg_color` to change the *hover* Javadoc message, that appears when you put your mouse over a Java class, in Eclipse's *Java Editor* view. I created these aliases to automate the procedure; you can include them in your `${HOME}/.bashrc` file:
+    
+        # Eclipse Javadoc background
+        export GTKRC=/usr/share/themes/Ambiance/gtk-2.0/gtkrc
+
+        alias eclipseDarkJavadocBackground="sed -ie 's/tooltip_fg_color:#[a-zA-Z0-9]\{6\}/tooltip_fg_color:#dddddd/g' \$GTKRC
+        sed -ie 's/tooltip_bg_color:#[a-zA-Z0-9]\{6\}/tooltip_bg_color:#333333/g' \$GTKRC"
+
+        alias eclipseDefaultJavadocBackground="sed -ie 's/tooltip_fg_color:#[a-zA-Z0-9]\{6\}/tooltip_fg_color:#000000/g' \$GTKRC
+        sed -ie 's/tooltip_bg_color:#[a-zA-Z0-9]\{6\}/tooltip_bg_color:#f5f5b5/g' \$GTKRC"
+
 
 Wow! It’s actually more than 10! Hope I reach 20 then!
