@@ -79,12 +79,16 @@ So, let’s start working! You have already downloaded Eclipse Mars on Ubuntu 16
     
         # Eclipse Javadoc background
         export GTKRC=/usr/share/themes/Ambiance/gtk-2.0/gtkrc
+        export ECLIPSE_JAVADOC_CONF=${ECLIPSE_WORKSPACE}/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs
 
         alias eclipseDarkJavadocBackground="sed -ie 's/tooltip_fg_color:#[a-zA-Z0-9]\{6\}/tooltip_fg_color:#dddddd/g' \$GTKRC
-        sed -ie 's/tooltip_bg_color:#[a-zA-Z0-9]\{6\}/tooltip_bg_color:#333333/g' \$GTKRC"
+        sed -ie 's/tooltip_bg_color:#[a-zA-Z0-9]\{6\}/tooltip_bg_color:#333333/g' \$GTKRC
+        sed -ie 's/org.eclipse.jdt.ui.JavadocView.backgroundColor=[0-9]\{1,3\},[0-9]\{1,3\},[0-9]\{1,3\}/org.eclipse.jdt.ui.JavadocView.backgroundColor=51,51,51/g' \$ECLIPSE_JAVADOC_CONF"
 
         alias eclipseDefaultJavadocBackground="sed -ie 's/tooltip_fg_color:#[a-zA-Z0-9]\{6\}/tooltip_fg_color:#000000/g' \$GTKRC
-        sed -ie 's/tooltip_bg_color:#[a-zA-Z0-9]\{6\}/tooltip_bg_color:#f5f5b5/g' \$GTKRC"
+        sed -ie 's/tooltip_bg_color:#[a-zA-Z0-9]\{6\}/tooltip_bg_color:#f5f5b5/g' \$GTKRC
+        sed -ie 's/org.eclipse.jdt.ui.JavadocView.backgroundColor=[0-9]\{1,3\},[0-9]\{1,3\},[0-9]\{1,3\}/org.eclipse.jdt.ui.JavadocView.backgroundColor=245,245,181/g' \$ECLIPSE_JAVADOC_CONF"
 
+    Restart Eclipse to see effects.
 
 Wow! It’s actually more than 10! Hope I reach 20 then!
