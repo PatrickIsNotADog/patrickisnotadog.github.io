@@ -11,3 +11,4 @@ Thankfully, open source world is a great place to live in and in order to change
 
 Restart *Terminator* to see the effect!
 
+![](../img/cyborg-tux-icon.png)
