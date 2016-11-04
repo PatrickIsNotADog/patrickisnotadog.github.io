@@ -67,13 +67,13 @@ Create an extra disk and attach it to the VM:
      virsh attach-disk lvm-demo --source `pwd`/lvm-demo-vdc.qcow2 --target vdc --driver qemu --subdriver qcow2 --persistent
 
 
-## Nested LVM
+## Create Nested LVM
 
 1. pvcreate /dev/vdc
 1. vgcreate vg00 /dev/vdc
-1. lvcreate -L 80G --name lxd vg00
-1. pvcreate /dev/vg00/lxd
-1. vgcreate lxd /dev/vg00/lxd
+1. lvcreate -L 80G --name containers vg00
+1. pvcreate /dev/vg00/containers
+1. vgcreate lxd /dev/vg00/containers
 
 ## Resize an existing Logical Volume
 
@@ -81,4 +81,13 @@ Create an extra disk and attach it to the VM:
 
 The option `--resizefs` is needed if you have a container using the LV as its root filesystem, so that the underlying fs gets updated too.
 
+## Delete Nested LVM structure
+
+1. lvremove lxd/LXDPool
+1. vgchange -a n lxd
+1. vgremove lxd
+1. lvremove vg00/containers
+1. vgchange -a n vg00
+1. vgremove vg00
+1. pvremove /dev/vdc
          
