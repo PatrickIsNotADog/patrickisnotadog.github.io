@@ -92,5 +92,6 @@ So, let’s start working! You have already downloaded Eclipse Mars on Ubuntu 16
         sed -ie 's/org.eclipse.jdt.ui.JavadocView.backgroundColor=[0-9]\{1,3\},[0-9]\{1,3\},[0-9]\{1,3\}/org.eclipse.jdt.ui.JavadocView.backgroundColor=245,245,181/g' \$ECLIPSE_JAVADOC_CONF"
 
     Restart Eclipse to see effects.
+1. Copy icon.xpm to `/usr/share/pixmaps` as `eclipse.xpm` to use it as dash icon.
 
 Wow! It’s actually more than 10! Hope I reach 20 then!
