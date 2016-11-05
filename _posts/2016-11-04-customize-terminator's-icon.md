@@ -12,6 +12,7 @@ Thankfully, open source world is a great place to live in and in order to change
 
         Icon=terminator
     with:
+
         Icon=/usr/share/icons/hicolor/48x48/apps/terminator.png
 
 Restart *Terminator* to see the effect!
