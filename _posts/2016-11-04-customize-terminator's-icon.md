@@ -5,9 +5,14 @@ If you use *Terminator* in your every day life, you may have noticed that the *D
 Thankfully, open source world is a great place to live in and in order to change the default icon to another one, you only have to:
 
 1. Create or download an icon you like - 256x256 is a great resolution to try - and name it `terminator.png`. Let's say that your custom *png* exists in `${HOME}/Downloads` directory.
-2. Copy the custom icon to:
+1. Copy the custom icon to:
 
         cp ${HOME}/Downloads/terminator.png /usr/share/icons/hicolor/48x48/apps/terminator.png
+1. Open `/usr/share/applications/terminator.desktop` and replace the line:
+
+        Icon=terminator
+    with:
+        Icon=/usr/share/icons/hicolor/48x48/apps/terminator.png
 
 Restart *Terminator* to see the effect!
 
