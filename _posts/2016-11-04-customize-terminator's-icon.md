@@ -11,6 +11,7 @@ Thankfully, open source world is a great place to live in and in order to change
 1. Open `/usr/share/applications/terminator.desktop` and replace the line:
 
         Icon=terminator
+        
     with:
 
         Icon=/usr/share/icons/hicolor/48x48/apps/terminator.png
