@@ -6,7 +6,7 @@ in, and I consult them every time I take a decision; this way the effect of my d
 My *compasses* that far are:
 
 * I want to be happy and enjoy life. I do not need or want a luxurious life (e.g. I do not want the super, fast, latest sport car;
-a nice sedan is just fine).
+I prefer a nice sedan).
 
 * In order to be happy, the people around me I care the most must be happy as well, both in their personal lives and in the
 relationship they have with me.
