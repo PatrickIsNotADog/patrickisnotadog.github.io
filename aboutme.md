@@ -10,7 +10,7 @@ Later, I realized another need: to talk about code, to think and discuss about p
 
 After some time thinking about programming, you will start with a new project, experiment with new techniques you have learned, identify and implement some design patterns you have read about. A never ending loop, which involves coding, experimenting, making mistakes and then taking a step back to think about all these and then start again. Reminds me a lot of Escher’s drawing hands.
 
-![M.C. Escher Drawing Hands](http://www.mcescher.com/wp-content/uploads/2013/10/LW355-MC-Escher-Drawing-Hands-1948.jpg)
+![M.C. Escher Drawing Hands](img/escher-drawing-hands.jpg)
 
 The place where I share my code is [Github](https://github.com/alkarn). This blog is built on top of [Dean Attali's great template](https://github.com/daattali/beautiful-jekyll) and hosted by [Github Pages](https://pages.github.com).
 
