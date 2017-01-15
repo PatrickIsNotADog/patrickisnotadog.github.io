@@ -12,7 +12,7 @@ Last week, I was writing a script that would copy TLS CSRs from 6 SaltStack *min
 catastrohic code here
 ```
 
-![Coding Horror](../coding-horror.png)
+![Coding Horror](../img/coding-horror.png)
 
 Analyze why this is a mistake.
 
