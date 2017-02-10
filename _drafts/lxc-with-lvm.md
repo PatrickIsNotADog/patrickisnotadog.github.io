@@ -81,6 +81,40 @@ Create an extra disk and attach it to the VM:
 
 The option `--resizefs` is needed if you have a container using the LV as its root filesystem, so that the underlying fs gets updated too.
 
+## Extend infrastructure with an extra disk
+
+This is the case when the initial disk space is not enough for a specific container's needs, and you want to add more disk space and include it in infrastructure's logical volumes.
+
+1. Supply a new qcow2 (extendable) disk to the VM:
+
+        qemu-img create -f qcow2 lvm-demo-vdd.qcow2 100G
+        virsh attach-disk lvm-demo --source `pwd`/lvm-demo-vdd.qcow2 --target vdc --driver qemu --subdriver qcow2 --persistent
+1. Declare it as a physical volume:
+
+        pvcreate /dev/vdd
+1. Confirm that the new disk appears in the physical volumes:
+
+        pvs
+1. Add new physical volume to *parent* volume group:
+
+        vgextend vg00 /dev/vdd
+1. Verify:
+
+        vgs
+1. Extend *parent* group's logical volume, that plays the *child* group's role:
+
+        lvextend -L${size} /dev/vg00/containers
+1. Remember that *containers* is also a physical volume so resize:
+
+        pvresize /dev/vg00/containers
+1. Extend LXDPool
+
+        lvextend -L 450G containers/LXDPool
+1. Resize specific container:
+
+        lvextend -L${container} --resizefs /dev/containers/${container}
+        
+
 ## Delete Nested LVM structure
 
 1. lvremove lxd/LXDPool
