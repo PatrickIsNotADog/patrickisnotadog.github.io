@@ -1,5 +1,7 @@
 # LVM
 
+http://tldp.org/HOWTO/LVM-HOWTO/
+
 ## LVM provides *dynamic partitions*, meaning that you can create, resize or delete LVM partitions, while your linux system is running. Other features it provides are:
 
 * you can extend a logical volume over more than one disks.
