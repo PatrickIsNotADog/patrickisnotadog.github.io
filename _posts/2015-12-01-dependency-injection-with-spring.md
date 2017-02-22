@@ -160,7 +160,7 @@ public class PhoneBook {
 Then we can create an `Application` class, which creates and configures the XmlBeanFactory in its main method:
 
 ```java
-,public class SpringApplication {
+public class SpringApplication {
 
     public static void main(String[] args) {
         BeanFactory injector = new XmlBeanFactory(new ClassPathResource("spring.xml"));
