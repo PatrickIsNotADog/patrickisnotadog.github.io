@@ -66,7 +66,7 @@ A virtual way to see all these is the following:
 Create an extra disk and attach it to the VM:
 
     qemu-img create -f qcow2 lvm-demo-vdc.qcow2 100G
-     virsh attach-disk lvm-demo --source `pwd`/lvm-demo-vdc.qcow2 --target vdc --driver qemu --subdriver qcow2 --persistent
+    virsh attach-disk lvm-demo --source `pwd`/lvm-demo-vdc.qcow2 --target vdc --driver qemu --subdriver qcow2 --persistent
 
 
 ## Create Nested LVM
