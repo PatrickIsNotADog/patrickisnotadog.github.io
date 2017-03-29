@@ -6,7 +6,7 @@ This is the point where I stop talking about this specific case and start discus
 
 In order to automate things, I developed a 150-line, monolithic script, that was divided in logical sections only by comments, that described what the following lines were about to do. No modularity was inherently provided - you could run the whole thing or nothing. I performed an adequate number of tests - while I was developing the script - and all seemed to run smoothly.
 
-Until I ran the the script part by part. Of course there was no such thing as a modular part, so I just commented out the logical sections, starting with a commented line. But since the script was not designed to run like this, dependencies existed between parts of code I tried to run independently. This, inevitably lead to the following:
+Until I ran the the script part by part. Of course there was no such thing as a modular part, so I just started commenting out logical sections, in order for the uncommented to be executed. But since the script was not designed to run like this, dependencies existed between parts of code I tried to run independently. This, inevitably lead to the following:
 
 ```
 ...
