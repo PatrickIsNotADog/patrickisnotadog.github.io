@@ -4,7 +4,7 @@ The case that created the need for a script, was a complex task for a SaltStack 
 
 This is the point where I stop talking about this specific case and start discussing the main point of this post: rough and dangerous as it can be, the command line provides the way to execute complex tasks, by combining various propriate tools, and automate procedures, that when manually executed would be tremendously long and error prone. Manually collecting 40 files from various nodes, performing actions on them and sending them back, is a great example of such a procedure.
 
-In order to automate things, I developed a 150-line, monolithic script, that was divided in logical sections only by comments, that described what the following lines were about to do. No modularity was inherently provided - you could run the whole thing or nothing, which was the biggest problem with the specific script. I performed an adequate number of tests - while I was developing the script - and all seemed to run smoothly.
+In order to automate things, I developed a 150-line, monolithic script, that was divided in logical sections only by comments, that described what the following lines were about to do. No modularity was inherently provided - you could run the whole thing or nothing. I performed an adequate number of tests - while I was developing the script - and all seemed to run smoothly.
 
 Until I ran the the script part by part. Of course there was no such thing as a modular part, so I just commented out the logical sections, starting with a commented line. But since the script was not designed to run like this, dependencies existed between parts of code I tried to run independently. This, inevitably lead to the following:
 
