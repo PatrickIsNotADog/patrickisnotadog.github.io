@@ -28,7 +28,7 @@ done
 
 ![Coding Horror](../img/coding-horror.png)
 
-Developing the script in a monolithic way and then running it modularly was clearly a big mistake, that lead to unitialized variables, that when used in an equivalently wrong command, executed
+Developing the script in a monolithic way and then running it modularly was clearly a big mistake, that lead to uninitialized variables, that when used in an equivalently wrong command, executed
 
     rm -rf /
     
@@ -38,8 +38,8 @@ on 6 of the infrastructure minions. There was no way to save them, so they had t
 
 After this disaster, I was thinking of abandoning the catastrophic script, but it was no better choice to manually perform a highly error prone procedure either. What I did instead, was to analyze my code flaws and refactor it to a more secure and elegant shape. The actions I performed were:
 
-* Since the biggest problem with the script was that it could not run in a modular way, I introduced functions to divide the file to independent modular sections. I tested each function separetely and made sure that all the variables and parameters used were properly initialized. A *main* function at the end of the file included all the script logic, calling the available functions with the proper sequence. There was no other command in the script, but a single `main`, in order to avoid *forgotten* commands between a vast amount of functions.
-* The disasterous command ran because I tried to delete a temporal directory, so I removed all the `rm` commands from the script and provided a *delete_temporal_directories* function, that would check if the directory variables have the correct values and only then remove the corresponding directories.
+* Since the biggest problem with the script was that it could not run in a modular way, I introduced functions to divide the file to independent modular sections. I tested each function separately and made sure that all the variables and parameters used were properly initialized. A *main* function at the end of the file included all the script logic, calling the available functions with the proper sequence. There was no other command in the script, but a single `main`, in order to avoid *forgotten* commands between a vast amount of functions.
+* The disastrous command ran because I tried to delete a temporal directory, so I removed all the `rm` commands from the script and provided a *delete_temporal_directories* function, that would check if the directory variables have the correct values and only then remove the corresponding directories.
 * Something similar could happen with `mv` too, so I reshaped
 
         mv ${certs_dir}/* /etc/ssl/mycerts
@@ -52,8 +52,8 @@ After this disaster, I was thinking of abandoning the catastrophic script, but i
         function create_server_pems_in_minions {
 
 
-Of course the biggest lesson I learned was to never neglect good practices, even when developing under pressure to meet a deadline. After all, if something disasterous happens, the time you will spend to recover will be much more, than the time saved to finish a script.
+Of course the biggest lesson I learned was to never neglect good practices, even when developing under pressure to meet a deadline. After all, if something disastrous happens, the time you will spend to recover will be much more, than the time saved to finish a script.
 
-I felt completely disapointed and embarrassed by the trouble I created, and this is why I tried to find the root cause of the problems. Gladly, nobody put blames on me and I feel really good that I work with people that do not discourage me to occasionally make some mistakes. :)
+I felt completely disappointed and embarrassed by the trouble I created, and this is why I tried to find the root cause of the problems. Gladly, nobody put blames on me and I feel really good that I work with people that do not discourage me to occasionally make some mistakes. :)
 
 
