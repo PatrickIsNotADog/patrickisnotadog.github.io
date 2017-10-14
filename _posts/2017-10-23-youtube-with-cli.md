@@ -1,5 +1,3 @@
-# How to listen cool Youtube playlists using only CLI
-
 Back in 2007 I came to Athens as a first year Computer Engineer student, so I bought a PC with 1G RAM and an Intel Core Celeron CPU for 400 euros. Ten years later this PC is still alive, running on Lubuntu and I use it mainly to listen music, while I am doing chores in home or relaxing. Its name is *dog*, that is used metaphorically in Greece for people or things that endure in difficulties and time.
 
 ![GOT - the Hound](../img/hound.jpg)
