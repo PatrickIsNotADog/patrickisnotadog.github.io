@@ -36,7 +36,7 @@ In order for the parties to select an encryption suite, TLS starts a negotiation
 
 Every SSL/TLS connection begins with a “handshake”, which is the negotiation between the two parties, so that they mutually decide the details of the encryption they will use. In detail, they decide about the version of the SSL/TLS protocol and the cipher suite that will be used. Also, the server’s identity is verified, and if asked, the client’s too. Below are the (summarized) steps of a typical handshake:
 
-1. The client sends a “client hello” message with the list of protocols supported (in an order of preference) and it’s supported cipher suites.
+1. The client sends a “client hello” message with the list of protocols supported (in an order of preference) and its supported cipher suites.
 1. The server selects a protocol version (usually the latest common one) and a cipher suite from the client’s list and sends back a “server hello” message with these two choices and also its digital certificate. If the server requires it, it will also send a request for the client’s digital certificate too, along with the acceptable Certificate Authorities (CAs).
 1. The client verifies the server’s digital certificate and sends back to the server a random byte string (encrypted with server’s public key), that will be used by both the client and the server to compute a (shared) secret key, which will be used to encrypt session’s data. If asked, it also sends back its own digital certificate.
 1. If client’s certificate was asked the server verifies it.
