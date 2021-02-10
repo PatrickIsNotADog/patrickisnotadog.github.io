@@ -1,11 +1,3 @@
----
-layout: post
-title: SAYAMA-hills wetlands study report
-subtitle: A field trip to SAYAMA-hills
-thumbnail-img: /assets/img/sayama-hills/thumb.jpg
-cover-img: /assets/img/sayama-hills/sayama-forests.png
----
-
 ### 1. Introduction
 This report is about wetlands in Sayama-hills area, which is located about 40km northwest of central Tokyo, 
 stretching northwest of Tokyo and southwest of Saitama Prefecture. It is about 11km wide and 4km long. 
