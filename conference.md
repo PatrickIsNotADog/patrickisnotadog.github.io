@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Conference
-subtitle: This page contains academic conferences that I attended and going to attend.
+subtitle: Academic conferences that I attended and going to attend
 ---
 **Sort by time from newest to oldest**
 
