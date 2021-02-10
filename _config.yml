@@ -4,20 +4,21 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://alkarn.github.io"
+url: "http://patrickisnotadog.github.io"
 baseurl: ""
 
 # Name of website
-title: Alex Karnezis
+title: Homepage
 
 # Short description of your site
-description: Software engineer inspired to share his knowledge of whatever he occupies himself with, his projects and also his journeys :)
+description: Chemistry student to share personal information
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Conference: "conference"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -28,10 +29,9 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Alex Karnezis
-  email: "alex.a.karnezis@gmail.com"
-  github: alkarn
-  stackoverflow: 1154859/alex-karnezis
+  name: Patrick
+  email: "liyuanzhe@eagle.sophia.ac.jp"
+  github: PatrickIsNotADog
 
 # Select which links to show in the footer
 footer-links-active:
@@ -70,7 +70,7 @@ excerpt_length: 50
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "Europe/Athens"
+timezone: "Asia/Tokyo"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
