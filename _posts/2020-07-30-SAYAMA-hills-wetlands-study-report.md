@@ -19,7 +19,6 @@ The typical ones are flowerhead of pertya scandens and all types of winter buds 
 Lyonia ovalifolia, neziki and clethra. Many common birds can be seen in the forest, such as the Japanese green woodpecker, 
 pheasant and Chinese bamboo partridge, as well as the cuckoo and small cuckoo rarely seen in urban areas.
 
-![figure1 2](../assets/img/sayama-hills/figure1,2.png)
 
 **Ecosystem Uniqueness**
 
