@@ -19,6 +19,7 @@ description: Chemistry student to share personal information
 navbar-links:
   About Me: "aboutme"
   Conference: "conference"
+  Publication: "publication"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
