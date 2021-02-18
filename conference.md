@@ -6,6 +6,10 @@ subtitle: Academic conferences that I attended and going to attend
 **Sort by time from newest to oldest**
 
 ### 2021
+- JpGU21, 3-6 June 2021, Poster
+
+  [Japan Geoscience Union Meeting 2021](http://www.jpgu.org/meeting_j2021/)
+
 - vEGU21, 19-30 April 2021, As a presenter
   
   [EGU General Assembly 2021](https://www.egu21.eu/)
