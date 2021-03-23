@@ -12,3 +12,8 @@ to be built using a lab stock Raspberry Pi 3B.
 
 Use Raspberry Pi 3B to build a real time environmental information monitor and data manager that can save
 environmental information for a long period of time. 
+
+### Hardware
+
+1. Host: Raspberry Pi Model B
+2. Sensor: VKLSVAN BME280
