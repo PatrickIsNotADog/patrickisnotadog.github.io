@@ -17,3 +17,5 @@ environmental information for a long period of time.
 
 1. Host: Raspberry Pi Model B
 2. Sensor: VKLSVAN BME280
+
+![Minecraft Pi Edition](../img/pi_minecraft.jpg)
